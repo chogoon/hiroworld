@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nestedScrollView_"
+    android:scrollbars="none"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/hide_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nested_scrollview_hide"
+            android:textSize="19sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nested_scrollview_text"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:background="@color/colorAccent"
+                    />
+
+            </FrameLayout>
+            <ScrollView
+                android:id="@+id/scrollView_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:id="@+id/container_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+                    <include layout="@layout/cell_menu_list_item"/>
+                    <include layout="@layout/cell_menu_list_item"/>
+                    <include layout="@layout/cell_menu_list_item"/>
+                    <include layout="@layout/cell_menu_list_item"/>
+                    <include layout="@layout/cell_menu_list_item"/>
+                    <include layout="@layout/cell_menu_list_item"/>
+                    <include layout="@layout/cell_menu_list_item"/>
+                    <include layout="@layout/cell_menu_list_item"/>
+                    <include layout="@layout/cell_menu_list_item"/>
+                    <include layout="@layout/cell_menu_list_item"/>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+</android.support.v4.widget.NestedScrollView>

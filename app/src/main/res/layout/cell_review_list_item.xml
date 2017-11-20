@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="?android:attr/selectableItemBackground"
+>
+
+    <LinearLayout
+        android:id="@+id/container_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?android:attr/selectableItemBackground"
+        android:visibility="visible"
+        android:layout_margin="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/photo_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/googleg_standard_color_18"
+
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginStart="4dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                >
+                <TextView
+                    android:id="@+id/name_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    tools:text="@string/app_name"
+                    android:textColor="@color/blue"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    tools:text=" / " />
+                <TextView
+                    android:id="@+id/date_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:gravity="center_vertical"
+                    tools:text="@string/app_name" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/content_"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                tools:text="@string/app_name" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

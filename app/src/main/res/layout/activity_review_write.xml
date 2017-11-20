@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SplashActivity">
+    <LinearLayout
+        android:id="@+id/main_layout_"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:visibility="visible">
+        <EditText
+            android:id="@+id/review_content_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:gravity="top"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/recommend_layout_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/write"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="6dp"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/write"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="6dp"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/write"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="6dp"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/footer_layout_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="6dp"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/send_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textSize="24sp" />
+    </LinearLayout>
+</LinearLayout>
